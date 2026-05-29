@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Maki Crunch</title>
+    <link rel="stylesheet" href="style.css" />    
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo">Maki Crunch</div>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <p class="hero-label">Menu</p>
+        <h1>Maki<br>Crunch</h1>
+        <p>Fresh · Bold · Made Daily</p>
+        <a href="#menu" class="btn">See Our Menu</a>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid" id="menu-grid">
+            <!-- Menu items are inserted by script.js -->
+        </div>
+    </section>
+
+    <!-- CART SIDEBAR -->
+    <div id="cart-sidebar" class="cart-hidden">
+        <h3>Your Order</h3>
+        <div id="cart-items"></div>
+        <p class="cart-total">Total: $ <span id="cart-total">0.00</span></p>
+        <input type="text" id="customer-name" placeholder="Your name" />
+        <input type="tel" id="customer-phone" placeholder="Phone number" />
+        <textarea id="order-notes" placeholder="Special instructions (optional)"></textarea>
+        <button id="checkout-btn" class="btn">Pay Now</button>
+        <button id="close-cart">✕ Close</button>
+    </div>
+    <!-- ↑ Cart sidebar ends here -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Find Us</h2>
+        <div class="contact-grid">
+            <div>
+                <p>📍 Jalan Utama, Kajang, Selangor</p>
+                <p>📞 +60 12-345 6789</p>
+                <p>📱 WhatsApp us to pre-order!</p>
+                <p>🕐 Mon–Sat: 11am – 9pm</p>
+                <p>❌ Closed Sundays</p>
+            </div>
+            <div>
+                <p>Follow us on Instagram: <strong>@makicrunch</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Maki Crunch · Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
