@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "outputDirectory": ".",
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+    { "src": "api/create-checkout-session.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/create-checkout-session", "dest": "/api/create-checkout-session.js" },
