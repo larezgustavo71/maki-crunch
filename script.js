@@ -148,7 +148,7 @@ document.getElementById("checkout-btn").addEventListener("click", async () => {
 
   const total = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
 
-  const res = await fetch("/create-checkout-session", {
+  const res = await fetch("/api/create-checkout-session", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ cart, name, phone, total })
